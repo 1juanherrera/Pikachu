@@ -27,13 +27,13 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div>
       <form onSubmit={(e) => searchPokemon(e)}>
-            <input className='input_text' type="text" />
+            <input className='input' type="text" />
             <input className='button' type="submit" />
           </form>
           <Pokemon 
-          data={ pokemonData }
+          data={pokemonData}
           />
     </div>
   )
