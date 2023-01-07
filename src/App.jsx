@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
-    .get('https://pokeapi.co/api/v2/pokemon/pikachu')
+    .get('https://pokeapi.co/api/v2/pokemon/charizard')
     .then( resp => setPokemonData(resp.data))
     .catch(error => console.log(error))
   }, [])
@@ -20,6 +20,10 @@ function App() {
           <Pokemon 
           data={ pokemonData }
           />
+          <form>
+            <input className='input_text' type="text" />
+            <input className='button' type="submit" />
+          </form>
     </div>
   )
 }
