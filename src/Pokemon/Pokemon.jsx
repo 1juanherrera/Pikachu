@@ -11,7 +11,7 @@ const Pokemon = ({ data }) => {
             <div>
                 <h2>{data.name}</h2>
                 <h2><span>Type:</span>{data.types?.[0].type.name}</h2>
-                <h2><span>Exp:</span> {data.base_expereience}</h2>
+                <h2><span>Exp:</span> {data.base_experience}</h2>
             </div>
         </article>
     )
