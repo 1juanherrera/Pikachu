@@ -25,7 +25,6 @@ function App() {
     getData()
   }, [nameData])
 
-
   return (
     <div className='App_pokemon'>
       <form onSubmit={(e) => searchPokemon(e)}>
